@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { headers } from 'next/headers'
 import { auth } from '@/auth'
 import { Button } from '@/components/ui/button'
 import {
@@ -12,7 +11,6 @@ import {
 import { SignOut } from '@/lib/actions/user.actions'
 
 export default async function UserButton() {
-  const headersList = headers()
   const session = await auth()
   if (!session)
     return (

@@ -42,7 +42,6 @@ export default async function UserButton() {
               </p>
             </div>
           </DropdownMenuLabel>
-
           <DropdownMenuItem className="p-0 mb-1">
             <form action={SignOut} className="w-full">
               <Button
